@@ -4,7 +4,6 @@ import io.restassured.parsing.Parser;
 import org.aeonbits.owner.ConfigFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-
 import test.ApplicationConfig;
 
 import java.io.File;
@@ -13,9 +12,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Properties;
 
-
 public class BaseTest {
-
     private static Properties environment;
     private ApplicationConfig cfg = ConfigFactory.create(ApplicationConfig.class);
 
@@ -23,7 +20,6 @@ public class BaseTest {
     @BeforeSuite(description = "Configure URI")
     public void SetUpSuite(){
         RestAssured.baseURI = cfg.host();
-//        RestAssured.port = cfg.port();
         RestAssured.basePath = cfg.base();
         RestAssured.defaultParser = Parser.JSON;
         RestAssured.filters(new AllureRestAssured());
