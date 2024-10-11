@@ -112,7 +112,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="petRequestTest" class="method navigator-link" hash-for-method="findPetByIdTest">findPetByIdTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="petRequestTest" class="method navigator-link" hash-for-method="findPertByIdTest">findPertByIdTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,9 +159,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="findPetByIdTest">
-                  </a> <!-- findPetByIdTest -->
-                  <span class="method-name">findPetByIdTest</span>
+                  <a name="findPertByIdTest">
+                  </a> <!-- findPertByIdTest -->
+                  <span class="method-name">findPertByIdTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -191,8 +191,8 @@
 &lt;suite thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;BaseTest&quot;/&gt;
       &lt;class name=&quot;petRequestTest&quot;/&gt;
+      &lt;class name=&quot;BaseTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -236,23 +236,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addPetTest')
 data.setCell(0, 2, 'petRequestTest')
-data.setCell(0, 3, 3744);
+data.setCell(0, 3, 4577);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deletePetTest')
+data.setCell(1, 1, 'findPetByStatusTest')
 data.setCell(1, 2, 'petRequestTest')
-data.setCell(1, 3, 1744);
+data.setCell(1, 3, 1647);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'findPetByStatusTest')
+data.setCell(2, 1, 'findPertByIdTest')
 data.setCell(2, 2, 'petRequestTest')
-data.setCell(2, 3, 1738);
+data.setCell(2, 3, 1581);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'findPetByIdTest')
+data.setCell(3, 1, 'deletePetTest')
 data.setCell(3, 2, 'petRequestTest')
-data.setCell(3, 3, 1607);
+data.setCell(3, 3, 1567);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'updatePetTest')
 data.setCell(4, 2, 'petRequestTest')
-data.setCell(4, 3, 1536);
+data.setCell(4, 3, 1518);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -276,7 +276,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">petRequestTest</span>
+              <span class="ignored-class-name">BaseTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">TearDownSuite</span>
                 <br/>
@@ -292,40 +292,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">BaseTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">petRequestTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">SetUpSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">petRequestTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">addPetTest</span>
-                <span class="method-start">588 ms</span>
+                <span class="method-start">1315 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">findPetByIdTest</span>
-                <span class="method-start">4422 ms</span>
+                <span class="method-name">findPertByIdTest</span>
+                <span class="method-start">6137 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updatePetTest</span>
-                <span class="method-start">6033 ms</span>
+                <span class="method-start">7757 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">findPetByStatusTest</span>
-                <span class="method-start">7571 ms</span>
+                <span class="method-start">9310 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deletePetTest</span>
-                <span class="method-start">9312 ms</span>
+                <span class="method-start">10988 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">BaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">TearDownSuite</span>
-                <span class="method-start">11110 ms</span>
+                <span class="method-start">12847 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

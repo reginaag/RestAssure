@@ -10,4 +10,7 @@ public interface ApplicationConfig extends Config {
 
     @Config.Key("server.base")
     String base();
+
+    @Config.Key("server.baseUser")
+    String baseUser();
 }
