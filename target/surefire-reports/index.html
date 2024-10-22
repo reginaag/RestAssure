@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">11 methods, 4 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="petRequestTest" class="method navigator-link" hash-for-method="deletePetTest">deletePetTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="petRequestTest" class="method navigator-link" hash-for-method="findPetByIdTest">findPetByIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="petRequestTest" class="method navigator-link" hash-for-method="findPetByStatusTest">findPetByStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="petRequestTest" class="method navigator-link" hash-for-method="updatePetTest">updatePetTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,22 +136,32 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="petRequestTest" class="method navigator-link" hash-for-method="deletePetTest">deletePetTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="userRequestTest" class="method navigator-link" hash-for-method="createUser">createUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="petRequestTest" class="method navigator-link" hash-for-method="findPertByIdTest">findPertByIdTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="userRequestTest" class="method navigator-link" hash-for-method="deleteUser">deleteUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="petRequestTest" class="method navigator-link" hash-for-method="findPetByStatusTest">findPetByStatusTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="userRequestTest" class="method navigator-link" hash-for-method="getUser">getUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="petRequestTest" class="method navigator-link" hash-for-method="updatePetTest">updatePetTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="userRequestTest" class="method navigator-link" hash-for-method="loginUser">loginUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="userRequestTest" class="method navigator-link" hash-for-method="logoutUser">logoutUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="userRequestTest" class="method navigator-link" hash-for-method="updateUser">updateUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -137,6 +176,124 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">petRequestTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePetTest">
+                  </a> <!-- deletePetTest -->
+                  <span class="method-name">deletePetTest</span>
+                  <div class="stack-trace">groovy.lang.GroovyRuntimeException: could not access constructor: private java.lang.AssertionError(java.lang.String) with arguments: [1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at petRequestTest.deletePetTest(petRequestTest.java:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findPetByIdTest">
+                  </a> <!-- findPetByIdTest -->
+                  <span class="method-name">findPetByIdTest</span>
+                  <div class="stack-trace">groovy.lang.GroovyRuntimeException: could not access constructor: private java.lang.AssertionError(java.lang.String) with arguments: [1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:238)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at petRequestTest.findPetByIdTest(petRequestTest.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findPetByStatusTest">
+                  </a> <!-- findPetByStatusTest -->
+                  <span class="method-name">findPetByStatusTest</span>
+                  <div class="stack-trace">groovy.lang.GroovyRuntimeException: could not access constructor: private java.lang.AssertionError(java.lang.String) with arguments: [1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at petRequestTest.findPetByStatusTest(petRequestTest.java:92)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePetTest">
+                  </a> <!-- updatePetTest -->
+                  <span class="method-name">updatePetTest</span>
+                  <div class="stack-trace">groovy.lang.GroovyRuntimeException: could not access constructor: private java.lang.AssertionError(java.lang.String) with arguments: [1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;405&gt;.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:169)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)
+	at petRequestTest.updatePetTest(petRequestTest.java:80)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -150,32 +307,54 @@
                   <span class="method-name">addPetTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">userRequestTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="deletePetTest">
-                  </a> <!-- deletePetTest -->
-                  <span class="method-name">deletePetTest</span>
+                  <a name="createUser">
+                  </a> <!-- createUser -->
+                  <span class="method-name">createUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="findPertByIdTest">
-                  </a> <!-- findPertByIdTest -->
-                  <span class="method-name">findPertByIdTest</span>
+                  <a name="deleteUser">
+                  </a> <!-- deleteUser -->
+                  <span class="method-name">deleteUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="findPetByStatusTest">
-                  </a> <!-- findPetByStatusTest -->
-                  <span class="method-name">findPetByStatusTest</span>
+                  <a name="getUser">
+                  </a> <!-- getUser -->
+                  <span class="method-name">getUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="updatePetTest">
-                  </a> <!-- updatePetTest -->
-                  <span class="method-name">updatePetTest</span>
+                  <a name="loginUser">
+                  </a> <!-- loginUser -->
+                  <span class="method-name">loginUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutUser">
+                  </a> <!-- logoutUser -->
+                  <span class="method-name">logoutUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUser">
+                  </a> <!-- updateUser -->
+                  <span class="method-name">updateUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,6 +370,7 @@
 &lt;suite thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; parallel=&quot;classes&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;userRequestTest&quot;/&gt;
       &lt;class name=&quot;petRequestTest&quot;/&gt;
       &lt;class name=&quot;BaseTest&quot;/&gt;
     &lt;/classes&gt;
@@ -206,7 +386,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (2 classes)</span>
+                <span class="test-name">Surefire test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,32 +412,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addPetTest')
-data.setCell(0, 2, 'petRequestTest')
-data.setCell(0, 3, 4577);
+data.setCell(0, 1, 'createUser')
+data.setCell(0, 2, 'userRequestTest')
+data.setCell(0, 3, 5591);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'findPetByStatusTest')
-data.setCell(1, 2, 'petRequestTest')
-data.setCell(1, 3, 1647);
+data.setCell(1, 1, 'loginUser')
+data.setCell(1, 2, 'userRequestTest')
+data.setCell(1, 3, 1974);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'findPertByIdTest')
-data.setCell(2, 2, 'petRequestTest')
-data.setCell(2, 3, 1581);
+data.setCell(2, 1, 'getUser')
+data.setCell(2, 2, 'userRequestTest')
+data.setCell(2, 3, 1924);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'deletePetTest')
+data.setCell(3, 1, 'updatePetTest')
 data.setCell(3, 2, 'petRequestTest')
-data.setCell(3, 3, 1567);
+data.setCell(3, 3, 1905);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'updatePetTest')
+data.setCell(4, 1, 'addPetTest')
 data.setCell(4, 2, 'petRequestTest')
-data.setCell(4, 3, 1518);
+data.setCell(4, 3, 1844);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'deletePetTest')
+data.setCell(5, 2, 'petRequestTest')
+data.setCell(5, 3, 1800);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'logoutUser')
+data.setCell(6, 2, 'userRequestTest')
+data.setCell(6, 3, 1733);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'deleteUser')
+data.setCell(7, 2, 'userRequestTest')
+data.setCell(7, 3, 1724);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'findPetByIdTest')
+data.setCell(8, 2, 'petRequestTest')
+data.setCell(8, 3, 1642);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'updateUser')
+data.setCell(9, 2, 'userRequestTest')
+data.setCell(9, 3, 1600);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'findPetByStatusTest')
+data.setCell(10, 2, 'petRequestTest')
+data.setCell(10, 3, 1477);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -297,29 +501,108 @@ return data;
                 <span class="method-name">SetUpSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">userRequestTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">SetUpSuite</span>
+                <span class="method-start">1526 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">createUser</span>
+                <span class="method-start">1620 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">petRequestTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">addPetTest</span>
-                <span class="method-start">1315 ms</span>
+                <span class="method-start">7446 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">userRequestTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">findPertByIdTest</span>
-                <span class="method-start">6137 ms</span>
+                <span class="method-name">getUser</span>
+                <span class="method-start">9326 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">petRequestTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">findPetByIdTest</span>
+                <span class="method-start">11279 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">userRequestTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">updateUser</span>
+                <span class="method-start">12988 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">petRequestTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">updatePetTest</span>
-                <span class="method-start">7757 ms</span>
+                <span class="method-start">14616 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">userRequestTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">loginUser</span>
+                <span class="method-start">16591 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">petRequestTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">findPetByStatusTest</span>
-                <span class="method-start">9310 ms</span>
+                <span class="method-start">18633 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">userRequestTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">deletePetTest</span>
-                <span class="method-start">10988 ms</span>
+                <span class="method-name">deleteUser</span>
+                <span class="method-start">20135 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">petRequestTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deletePetTest</span>
+                <span class="method-start">21888 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">userRequestTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logoutUser</span>
+                <span class="method-start">23725 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">petRequestTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">TearDownSuite</span>
-                <span class="method-start">12847 ms</span>
+                <span class="method-start">25776 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">userRequestTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">TearDownSuite</span>
+                <span class="method-start">25800 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
